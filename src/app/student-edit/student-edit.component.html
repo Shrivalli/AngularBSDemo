@@ -1,0 +1,22 @@
+<h4> Edit Student Details </h4>
+
+<div>
+    Student ID: <input type="number" [(ngModel)]="s.sid"/>
+</div>
+<div>
+    Student Name: <input type="text" [(ngModel)]="s.sname"/>
+</div>
+<div>
+    Student Marks: <input type="number" [(ngModel)]="s.marks"/>
+</div>
+<div>
+    Date Of Birth: <input type="date" [(ngModel)]="s.DOB"/>
+</div>
+<div>
+    <input type="submit" (click)="Save()"/>
+</div>
+
+{{message}}
+{{s|json}}
+
+

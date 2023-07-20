@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'firstangularprj';
+  title = 'Birlasoft';
+  profilephoto="../assets/Images/tataovertakeshyundai.jpg";
 }

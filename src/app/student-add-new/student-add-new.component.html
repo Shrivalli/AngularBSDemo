@@ -1,0 +1,18 @@
+<p>student-add-new works!</p>
+<div>
+    Student ID: <input type="number" [(ngModel)]="s.sid"/>
+</div>
+<div>
+    Student Name: <input type="text" [(ngModel)]="s.sname"/>
+</div>
+<div>
+    Student Marks: <input type="number" [(ngModel)]="s.marks"/>
+</div>
+<div>
+    Date Of Birth: <input type="date" [(ngModel)]="s.DOB"/>
+</div>
+<div>
+    <input type="submit" (click)="register()"/>
+</div>
+
+{{s|json}}
