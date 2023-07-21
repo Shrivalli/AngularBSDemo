@@ -1,11 +1,13 @@
 <p>studentlist works!</p>
 <table class="table">
 <tr *ngFor="let s1 of students">
+<div *ngIf="s1!=null">
 <td>{{s1.sid}}</td>
 <td>{{s1.sname|uppercase}}</td>
 <td>{{s1.marks}}</td>
 <td>{{s1.DOB|date}}</td>
 <td><a [routerLink]="['/stedit',s1.sid]"> Edit Details </a></td>
-
+<td> <input type="submit" (click)="delete(s1.sid)" value="Delete">  </td>
+</div>
 </tr>
 </table>

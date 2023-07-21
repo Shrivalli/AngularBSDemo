@@ -41,4 +41,14 @@ export class StudentService {
     //this.students.push(s);
   }
 
+  delete(id:number)
+  {
+     for(let i = 0; i < this.students.length; ++i){
+      if (this.students[i].sid === id) {
+          this.students.splice(i,1);
+          this.getAllStudents();
+      }
+  }
+}
+
 }

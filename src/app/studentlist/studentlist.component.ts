@@ -18,4 +18,10 @@ students:Student[]=[];
     this.students=this.studentservice.getAllStudents();
   }
 
+  delete(id:number)
+  {
+    this.studentservice.delete(id);
+    console.log("Record deleted");
+        
+  }
 }
